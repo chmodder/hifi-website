@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "hifi-website", ".", "{2A8A2FD7-3FF0-4B43-A7F2-EEA61038C11D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/hifi-website"
+		Debug.AspNetCompiler.PhysicalPath = "..\hifi-website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\hifi-website\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/hifi-website"
+		Release.AspNetCompiler.PhysicalPath = "..\hifi-website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\hifi-website\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54159"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A8A2FD7-3FF0-4B43-A7F2-EEA61038C11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8A2FD7-3FF0-4B43-A7F2-EEA61038C11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

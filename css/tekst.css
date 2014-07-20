@@ -1,0 +1,120 @@
+
+/* CSS Document */
+/*----------html restyling----------------*/
+body
+{
+	font:					11px/16px Verdana, Arial, Helvetica, sans-serif;
+	color:					#000000;
+}
+
+h1
+{
+	font-size:				140%;
+	color:					#0099CC;
+}
+h2
+{
+	font-size:				120%;
+	color:					#0099CC;
+}
+h3
+{
+	font-size:				90%;
+	font-style:				italic;
+	color:					#0099CC;
+}
+p
+{
+	text-indent:			7px;
+	padding:				5px;	
+}
+/*----------tekst klasser----------------*/
+.hoved
+{
+	font-size:				200%;
+}
+.fed
+{
+	font-weight:			bold;
+}
+.producent
+{
+	font-weight:			bold;
+	color:					#FF3300;
+}
+/*----------menu klasse----------------*/
+.navcontainer 
+{
+	width: 						100px;
+	margin-left:				45px;
+}
+.navcontainer a 
+{
+	font-family: 				Arial, Helvetica, sans-serif;
+	font-size: 					11px;
+	color:						#000000;
+	/*background-color:			#009999;*/
+	display: 					block;
+	padding: 					3px;
+	width: 						100px;
+	border-bottom-width: 		1px;
+	border-bottom-style: 		solid;
+	border-bottom-color:		#000000;
+	border-left-width: 			1px;
+	border-left-style: 			solid;
+	border-left-color: 			#000000;
+}
+.navcontainer a:link 
+{
+	font-family: 				Arial, Helvetica, sans-serif;
+	font-size: 					11px;
+	color: 						#000000;
+	text-decoration: 			none;
+	background-color: 			#009999;
+}
+.navcontainer a:visited 
+{
+
+	font-size: 					11px;
+	color: 						#000000;
+	text-decoration: 			none;
+}
+.navcontainer a:active 
+{
+	color:						#6699FF;
+}
+.navcontainer a:hover 
+{
+	color:						#FFFFFF;
+	background-color:			#009999;
+}
+/*----------css links----------------*/
+a:link
+{
+	color:						#33CC00;
+}
+a:visited
+{
+	color:						#33CC00;
+}
+a:active
+{
+	color:						#33CC00;
+}
+a:hover
+{
+	color:						#3399FF;
+	background-color:			#FF6666;
+}
+
+.h2
+{
+	font-size:				120%;
+    font-weight:            bolder;
+	color:					#000000;
+}
+.h3
+{
+	font-size:				110%;
+	color:					#0099CC;
+}

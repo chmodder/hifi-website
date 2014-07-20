@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="admin_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../css/opsaetning.css" rel="stylesheet" />
+    <link href="../css/tekst.css" rel="stylesheet" />
+
+    <title>HiFi</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="main">
+
+            <div id="header">
+
+                <div class="hoved" id="head_overskrift">Hi-Fi Netbutikken</div>
+                <!--head_overskrift slut-->
+
+                <div id="head_produkt">
+                    <h1>
+                        <asp:Label ID="LabelOverskrift" runat="server" Text="Velkommen"></asp:Label>
+
+                    </h1>
+                    
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server">
+                        </asp:ContentPlaceHolder>
+                    
+
+                </div>
+                <!--head_overskrift slut-->
+
+            </div>
+            <!--header slut-->
+
+            <div id="content">
+
+                <div id="content_left">
+
+                    <div class="navcontainer">
+
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT [categoriesId],[categoriesName] FROM [Categories] ORDER BY [categoriesId]"></asp:SqlDataSource>
+
+                        <a href="default.aspx">Forside</a>
+                        <asp:Repeater ID="RepeaterMenu" runat="server" DataSourceID="SqlDataSource1">
+
+                            <ItemTemplate>
+                                <a href="kategori.aspx?id=<%#Eval("categoriesId") %>&overskrift=<%#Eval("categoriesName") %>"><%#Eval("categoriesName") %></a>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                       <%-- <a href="../default.aspx">#</a>--%>
+
+                    </div>
+                    <!--navcontainer slut-->
+
+                </div>
+                <!--content_left slut-->
+
+                <div id="content_right">
+
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+                <!--content_right slut-->
+
+            </div>
+            <!--content slut-->
+
+            <div id="footer">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="fed">Hi-fi Netbutikken</td>
+                        <td>byvej 25</td>
+                        <td>4000</td>
+                        <td>bykøbing</td>
+                        <td>tlf: 45 45 45 45</td>
+                        <td>fax: 45 45 45 55</td>
+                        <td>post@hifi-netbutikken.dk</td>
+                    </tr>
+                </table>
+            </div>
+            <!--footer slut-->
+        </div>
+        <!--main slut-->
+    </form>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,93 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+div#main
+{
+	width:						955px;
+	height:						600px;
+	background-image:			url(../img/bg/hifibg.jpg);
+	border:						1px solid #000000;
+	margin-right:				auto;
+	margin-left:				auto;
+}
+div#header
+{
+	width:						100%;
+	height:						100px;
+	float:						left;
+	border-bottom:				1px solid #000000;
+}
+div#head_overskrift
+{
+	width:						350px;
+	height:						40px;
+	margin-top:					55px;
+	margin-left:				10px;
+	float:						left;
+}
+div#head_produkt
+{
+	width:						150px;
+	height:						30px;
+	margin-top:					65px;
+	margin-right:				10px;
+	float:						right;
+}
+div#content
+{
+	width:						100%;
+	height:						471px;
+	float:						left;
+	overflow:auto;
+}
+div#content_left
+{
+	width:						200px;
+	margin-top:					20px;
+	float:						left;
+}
+div#content_right
+{
+	width:						675px;
+	height:						440px;
+	float:						right;
+	margin-right:				20px;
+	margin-top:					20px;
+	overflow:					auto;
+	
+}
+div#footer
+{
+	width:						100%;
+	height:						25px;
+	float:						left;
+	border-top:						1px solid #000000;
+}
+div.billede_left
+{
+	float:						left;
+	
+}
+div.billede_right
+{
+	float:						right;
+	border:						1px solid #000000;
+	margin-left:				10px;
+	margin-right:				5px;
+}
+div.produkter
+{
+	width:						100%;
+	float:						left;
+}
+div.produkter_content
+{
+	width:						50%;
+	float:						left;
+	margin-left:				5px;
+}
+.break 
+{
+    width:100%;
+    overflow:hidden;
+}
